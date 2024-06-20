@@ -1,0 +1,16 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {list-style-type: none;}
+a {text-decoration: none;}
+
+[v-cloak] {display: none;}
+
+/* font */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
