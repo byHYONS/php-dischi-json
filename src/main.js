@@ -7,14 +7,20 @@ createApp({
     data() {
         return {
             url: 'http://localhost:8888/php-dischi-json/src/data/server.php',
-            titlePage: 'Bentornato!',
+            album: [],
         }
     },
     methods: {
         callAPI() {
             axios.get(this.url).then(response => {
-                console.log(response);
+                this.album = response.data;
             })
         }
     },
+    created() {
+        this.callAPI()
+    },
 }).mount('#app');
+
+
+// FINE

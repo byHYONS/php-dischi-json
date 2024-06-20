@@ -1,9 +1,13 @@
 <?php
 
-$data = json_decode(file_get_contents('./music-list.json'));
+//? lettura file json:
+$data = file_get_contents('music-list.json');
+$music_list = json_decode($data, true);
 
-var_dump($data);
+// var_dump($music_list);
 
+
+
+//? condivisione server:
 header('Content-Type: application/json');
-json_encode($data);
-
+echo json_encode($music_list);
