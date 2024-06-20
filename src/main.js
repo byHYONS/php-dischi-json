@@ -7,13 +7,13 @@ createApp({
     data() {
         return {
             url: 'http://localhost:8888/php-dischi-json/src/data/server.php',
-            album: [],
+            albums: [],
         }
     },
     methods: {
         callAPI() {
             axios.get(this.url).then(response => {
-                this.album = response.data;
+                this.albums = response.data;
             })
         }
     },
