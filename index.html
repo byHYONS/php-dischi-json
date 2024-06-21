@@ -17,10 +17,10 @@
     <title>PHP Dischi JSON</title>
 </head>
 <body>
-
+    <!-- project VUEJS -->
     <div id="app" v-cloak>
         <header>
-            <nav class="navbar bg-body-tertiary">
+            <nav class="navbar bg-secondary-subtle text-secondary-emphasis p-3">
                 <div class="container-fluid">
                     <a class="navbar-brand">JsonDisk</a>
                     <form class="d-flex" role="search">
@@ -33,18 +33,20 @@
         <main>
             <div class="container my-5">
                 <div class="row">
+                    <!-- cards lista album -->
                     <div class="col-3"
                     v-for="(album, index) in albums" 
                     :key="index">
-                    <div class="card mb-5" style="width: 18rem;">
-                        <img :src="album.immagine" class="card-img-top" :alt="album.album">
-                        <div class="card-body">
-                            <h5 class="card-title"> {{album.album}} </h5>
-                            <p class="card-text"> {{album.artista}} </p>
-                            <a href="#" class="btn btn-primary">Apri album</a>
+                        <div class="card mb-5" style="width: 18rem;">
+                            <img :src="`./src/img/${album.immagine}`" class="card-img-top" :alt="album.album">
+                            <div class="card-body">
+                                <h5 class="card-title"> {{album.album}} </h5>
+                                <p class="card-text"> {{album.artista}} </p>
+                                <a href="#" class="btn btn-primary">Apri album</a>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                    <!-- /cards lista album -->
                 </div>
             </div>
         </main>
@@ -52,6 +54,7 @@
 
         <footer></footer>
     </div>
+    <!-- /project VUEJS -->
 
 
 <!-- vuejs -->

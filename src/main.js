@@ -11,6 +11,7 @@ createApp({
         }
     },
     methods: {
+        //? chiamata API:
         callAPI() {
             axios.get(this.url).then(response => {
                 this.albums = response.data;

@@ -6,7 +6,7 @@
         "uscita": 2015,
         "valutazione": 4.5,
         "copie_vendute": 1200000,
-        "immagine": "cover1.webp"
+        "immagine": "cover1.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "uscita": 2017,
         "valutazione": 4.7,
         "copie_vendute": 900000,
-        "immagine": "cover2.webp"
+        "immagine": "cover2.jpg"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "uscita": 2016,
         "valutazione": 4.8,
         "copie_vendute": 1100000,
-        "immagine": "cover3.webp"
+        "immagine": "cover3.jpg"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "uscita": 2014,
         "valutazione": 4.6,
         "copie_vendute": 850000,
-        "immagine": "cover4.webp"
+        "immagine": "cover4.jpg"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "uscita": 2018,
         "valutazione": 4.9,
         "copie_vendute": 1300000,
-        "immagine": "cover5.webp"
+        "immagine": "cover5.jpg"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "uscita": 2019,
         "valutazione": 4.4,
         "copie_vendute": 780000,
-        "immagine": "cover6.webp"
+        "immagine": "cover6.jpg"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "uscita": 2020,
         "valutazione": 4.7,
         "copie_vendute": 950000,
-        "immagine": "cover7.webp"
+        "immagine": "cover7.jpg"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "uscita": 2013,
         "valutazione": 4.5,
         "copie_vendute": 670000,
-        "immagine": "cover8.webp"
+        "immagine": "cover8.jpg"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "uscita": 2012,
         "valutazione": 4.2,
         "copie_vendute": 600000,
-        "immagine": "cover9.webp"
+        "immagine": "cover9.jpg"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "uscita": 2021,
         "valutazione": 4.8,
         "copie_vendute": 1400000,
-        "immagine": "cover10.webp"
+        "immagine": "cover10.jpg"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "uscita": 2015,
         "valutazione": 4.6,
         "copie_vendute": 750000,
-        "immagine": "cover11.webp"
+        "immagine": "cover11.jpg"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "uscita": 2016,
         "valutazione": 4.7,
         "copie_vendute": 980000,
-        "immagine": "cover12.webp"
+        "immagine": "cover12.jpg"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "uscita": 2017,
         "valutazione": 4.9,
         "copie_vendute": 1050000,
-        "immagine": "cover13.webp"
+        "immagine": "cover13.jpg"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "uscita": 2018,
         "valutazione": 4.5,
         "copie_vendute": 690000,
-        "immagine": "cover14.webp"
+        "immagine": "cover14.jpg"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "uscita": 2019,
         "valutazione": 4.3,
         "copie_vendute": 540000,
-        "immagine": "cover15.webp"
+        "immagine": "cover15.jpg"
     },
     {
         "id": 16,
@@ -141,7 +141,7 @@
         "uscita": 2020,
         "valutazione": 4.8,
         "copie_vendute": 870000,
-        "immagine": "cover16.webp"
+        "immagine": "cover16.jpg"
     },
     {
         "id": 17,
@@ -150,7 +150,7 @@
         "uscita": 2021,
         "valutazione": 4.6,
         "copie_vendute": 920000,
-        "immagine": "cover17.webp"
+        "immagine": "cover17.jpg"
     },
     {
         "id": 18,
@@ -159,7 +159,7 @@
         "uscita": 2014,
         "valutazione": 4.7,
         "copie_vendute": 780000,
-        "immagine": "cover18.webp"
+        "immagine": "cover18.jpg"
     },
     {
         "id": 19,
@@ -168,7 +168,7 @@
         "uscita": 2013,
         "valutazione": 4.5,
         "copie_vendute": 650000,
-        "immagine": "cover19.webp"
+        "immagine": "cover19.jpg"
     },
     {
         "id": 20,
@@ -177,6 +177,6 @@
         "uscita": 2022,
         "valutazione": 4.9,
         "copie_vendute": 1150000,
-        "immagine": "cover20.webp"
+        "immagine": "cover20.jpg"
     }
 ]
