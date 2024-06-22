@@ -16,6 +16,19 @@ createApp({
             axios.get(this.url).then(response => {
                 this.albums = response.data;
             })
+        },
+
+        //? call API for info:
+        getInfo(id){
+            console.log('voglio più informazioni ' + id);
+            const params = {
+                id: id,
+                action: 'info'
+            };
+            axios.get(this.url, params).then(response => {
+                response.data;
+            })
+
         }
     },
     created() {
