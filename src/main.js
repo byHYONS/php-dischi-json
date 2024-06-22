@@ -6,7 +6,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            url: 'http://localhost:8888/php-dischi-json/src/data/server.php',
+            url: 'http://localhost:8888/boolean/esercizi/php-dischi-json/src/data/server.php', 
             albums: [],
         }
     },
