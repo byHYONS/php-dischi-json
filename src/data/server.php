@@ -6,6 +6,7 @@ require_once 'functions.php';
 //? lettura file json:
 $data = file_get_contents('music-list.json');
 $music_list = json_decode($data, true);
+$database = __DIR__ . '/music-list.json';
 $result = $music_list;
 
 // var_dump($music_list);
@@ -23,8 +24,10 @@ if(isset($_GET['action']) && $_GET['action'] === 'info') {
     }
 };
 
+//? genera numeri random:
 function numRandom($min, $max){
-   return $new_id = rand(1, 1000);
+    $new_id = rand($min, $max);
+    return $new_id;
 };
 
 //? faccio chiamata in post per aggiungere album:
@@ -32,10 +35,12 @@ if(isset($_POST['action']) && $_POST['action'] === 'create') {
     
     foreach($music_list as $key => $music) {
         if($music['id'] !== numRandom(1, 1000)) {
-            $id_album =numRandom(1, 1000);
+            $id_album = numRandom(1, 1000);
             continue;
         }
     };
+
+    // $id_album = numRandom(30, 1000);
 
     $new_album = [
         'id' => $id_album,
@@ -44,12 +49,12 @@ if(isset($_POST['action']) && $_POST['action'] === 'create') {
         'uscita' => $_POST['uscita'],
         'valutazione' => $_POST['valutazione'],
         'copie_vendute' => numRandom(1000, 999000),
-        'immagine' => "cover{numRandom(21, 200)}.jpg",
+        'immagine' => "cover" . numRandom(1,20) . ".jpg",
     ];
 
-    $result = [...$$music_list, $new_album];
+    $result = [...$music_list, $new_album];
+    file_put_contents($database, json_encode($result));
     $result = array_map('getCover', $result);
-    file_put_contents($music_list, json_encode($result));
 
 };
 
