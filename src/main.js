@@ -12,6 +12,11 @@ createApp({
             modale: false,
             overlay: false,
             addAlbumForm: false,
+            newAlbum: '',
+            newArtista: '',
+            newUscita: '',
+            newValutazione: '',
+            
         }
     },
     methods: {
@@ -54,9 +59,6 @@ createApp({
             this.addAlbumForm = true;
             this.overlay = true;
             document.body.style.overflow = 'hidden';
-
-
-            this.callPostAddAlbum();
             
         },
 
@@ -64,7 +66,20 @@ createApp({
         callPostAddAlbum(){
             console.log('add album');
             
+            const data = {
+                action: 'create',
+                album: this.newAlbum,
+                artista: this.newArtista,
+                uscita: this.newUscita,
+                valutazione: this.newValutazione
+            };
 
+            axios
+            .post(this.url, data, {
+            headers: {'Content-Type': 'multipart/form-data'},})
+            .then(response => {
+            console.log(response);
+            });
             
             
         },

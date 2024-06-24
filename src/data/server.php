@@ -55,7 +55,7 @@ if(isset($_POST['action']) && $_POST['action'] === 'create') {
     $result = [...$music_list, $new_album];
     file_put_contents($database, json_encode($result));
     $result = array_map('getCover', $result);
-
+    
 };
 
 

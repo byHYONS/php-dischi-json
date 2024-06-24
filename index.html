@@ -75,22 +75,22 @@
                         <div class="form-album bg-white text-dark p-5 rounded">
                             <!-- form -->
                             <h2>Add Album:</h2>
-                            <form class="row g-3" action="server.php" method="POST">
+                            <form class="row g-3">
                                 <div class="col-md-6">
                                   <label for="album" class="form-label">Album</label>
-                                  <input type="text" name="album" class="form-control" id="album">
+                                  <input type="text" v-model="newAlbum" class="form-control" id="album">
                                 </div>
                                 <div class="col-md-6">
                                   <label for="input artista" class="form-label">Artista</label>
-                                  <input type="text" name="artista" class="form-control" id="input artista">
+                                  <input type="text" v-model="newArtista" class="form-control" id="input artista">
                                 </div>
                                 <div class="col-6">
                                   <label for="input-uscita" class="form-label">Uscita</label>
-                                  <input type="text" name="uscita" class="form-control" id="input-uscita">
+                                  <input type="text" v-model="newUscita" class="form-control" id="input-uscita">
                                 </div>
                                 <div class="col-6">
                                   <label for="input-valutazione" class="form-label">Valutazione</label>
-                                  <input type="text" name="valutazione" class="form-control" id="input-valutazione">
+                                  <input type="text" v-model="newValutazione" class="form-control" id="input-valutazione">
                                 </div>
                                 <div class="col-12">
                                   <button type="submit" class="btn btn-primary mt-3"

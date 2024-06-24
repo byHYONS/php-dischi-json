@@ -178,5 +178,14 @@
         "valutazione": 4.9,
         "copie_vendute": 1150000,
         "immagine": "cover20.jpg"
+    },
+    {
+        "id": 265,
+        "album": "marsela",
+        "artista": "jonathan",
+        "uscita": "2018",
+        "valutazione": "5",
+        "copie_vendute": 555479,
+        "immagine": "cover19.jpg"
     }
 ]
