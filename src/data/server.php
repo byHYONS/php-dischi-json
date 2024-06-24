@@ -23,6 +23,36 @@ if(isset($_GET['action']) && $_GET['action'] === 'info') {
     }
 };
 
+function numRandom($min, $max){
+   return $new_id = rand(1, 1000);
+};
+
+//? faccio chiamata in post per aggiungere album:
+if(isset($_POST['action']) && $_POST['action'] === 'create') {
+    
+    foreach($music_list as $key => $music) {
+        if($music['id'] !== numRandom(1, 1000)) {
+            $id_album =numRandom(1, 1000);
+            continue;
+        }
+    };
+
+    $new_album = [
+        'id' => $id_album,
+        'album' => $_POST['album'],
+        'artista' => $_POST['artista'],
+        'uscita' => $_POST['uscita'],
+        'valutazione' => $_POST['valutazione'],
+        'copie_vendute' => numRandom(1000, 999000),
+        'immagine' => "cover{numRandom(21, 200)}.jpg",
+    ];
+
+    $result = [...$$music_list, $new_album];
+    $result = array_map('getCover', $result);
+    file_put_contents($music_list, json_encode($result));
+
+};
+
 
 
 //? condivisione server:

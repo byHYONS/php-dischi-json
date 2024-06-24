@@ -11,6 +11,7 @@ createApp({
             album:[],
             modale: false,
             overlay: false,
+            addAlbumForm: false,
         }
     },
     methods: {
@@ -44,6 +45,34 @@ createApp({
         closeInfo(){
             this.modale = false;
             this.overlay= false;
+            document.body.style.overflow = '';
+        },
+
+        //? aggiungi album:
+        addAlbum(){
+            console.log('aggiungo album');
+            this.addAlbumForm = true;
+            this.overlay = true;
+            document.body.style.overflow = 'hidden';
+
+
+            this.callPostAddAlbum();
+            
+        },
+
+        //? call POST aggiunge album:
+        callPostAddAlbum(){
+            console.log('add album');
+            
+
+            
+            
+        },
+
+        //? uscita dal form aggiungi album:
+        exitToCall(){
+            this.addAlbumForm = false;
+            this.overlay = false;
             document.body.style.overflow = '';
         }
     },

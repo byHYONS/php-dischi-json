@@ -23,10 +23,8 @@
             <nav class="navbar bg-secondary-subtle text-secondary-emphasis p-3">
                 <div class="container-fluid">
                     <a class="navbar-brand">JsonDisk</a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <button class="btn btn-outline-success"
+                    @click="addAlbum">Add Album</button>       
                 </div>
             </nav>
         </header>
@@ -46,7 +44,7 @@
                                     <h5 class="card-title"> {{cover.album}} </h5>
                                     <p class="card-text"> {{cover.artista}} </p>
                                     <a href="#" class="btn btn-primary"
-                                    @click="getInfo(cover.id)">Apri album</a>
+                                    @click.prevent="getInfo(cover.id)">Apri album</a>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +70,40 @@
                         </div>
                     </div>
                     <!-- /modale -->
-            </div>
+                    <!-- aggiungo album -->
+                    <div class="hidden" :class="{'modale': addAlbumForm}">
+                        <div class="form-album bg-white text-dark p-5 rounded">
+                            <!-- form -->
+                            <h2>Add Album:</h2>
+                            <form class="row g-3" action="server.php" method="POST">
+                                <div class="col-md-6">
+                                  <label for="album" class="form-label">Album</label>
+                                  <input type="text" name="album" class="form-control" id="album">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="input artista" class="form-label">Artista</label>
+                                  <input type="text" name="artista" class="form-control" id="input artista">
+                                </div>
+                                <div class="col-6">
+                                  <label for="input-uscita" class="form-label">Uscita</label>
+                                  <input type="text" name="uscita" class="form-control" id="input-uscita">
+                                </div>
+                                <div class="col-6">
+                                  <label for="input-valutazione" class="form-label">Valutazione</label>
+                                  <input type="text" name="valutazione" class="form-control" id="input-valutazione">
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary mt-3"
+                                  @click="callPostAddAlbum">Add Album</button>
+                                </div>
+                            </form>
+                            <a href="#"
+                            @click.prevent="exitToCall"><span>X</span></a>
+                            
+                        </div>
+                    </div>
+                    <!-- /aggiungo album -->
+                </div>
         </main>
         <h1> {{titlePage}}</h1>
 
