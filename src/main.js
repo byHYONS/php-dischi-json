@@ -53,6 +53,27 @@ createApp({
             document.body.style.overflow = '';
         },
 
+        //? cancella album:
+        clearAlbum(id){
+            console.log('cancella l\'album' + id);
+            const params = {
+                action: 'clear',
+                id: id,
+            };
+            axios.get(this.url, {
+                params,
+            }).then(response => {
+                console.log(response);
+                this.callAPI();
+            });
+
+            // this.callAPI();
+            
+            this.modale = false;
+            this.overlay= false;
+            document.body.style.overflow = '';  
+        },
+
         //? aggiungi album:
         addAlbum(){
             console.log('aggiungo album');
@@ -80,8 +101,6 @@ createApp({
             .then(response => {
             console.log(response);
             });
-            
-            
         },
 
         //? uscita dal form aggiungi album:

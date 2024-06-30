@@ -17,7 +17,7 @@ $result = array_map('getCover', $result);
 if(isset($_GET['action']) && $_GET['action'] === 'info') {
     if(isset($_GET['id'])) {
         $index = $_GET['id'];
-        $position = array_search($_GET['id'], array_column($music_list, 'id'));
+        $position = array_search($index, array_column($music_list, 'id'));
         if($position !== false) {
             $result = $music_list[$position];
         }
@@ -40,8 +40,6 @@ if(isset($_POST['action']) && $_POST['action'] === 'create') {
         }
     };
 
-    // $id_album = numRandom(30, 1000);
-
     $new_album = [
         'id' => $id_album,
         'album' => $_POST['album'],
@@ -53,12 +51,27 @@ if(isset($_POST['action']) && $_POST['action'] === 'create') {
     ];
 
     $result = [...$music_list, $new_album];
-    file_put_contents($database, json_encode($result));
+    $music_list = array_values($music_list);
+    file_put_contents($database, json_encode($result, JSON_PRETTY_PRINT));
     $result = array_map('getCover', $result);
     
 };
 
-
+//? cancella album:
+if (isset($_GET['action']) && $_GET['action'] === 'clear') {
+    if (isset($_GET['id'])) {
+        $idx = $_GET['id'];
+        $posit = array_search($idx, array_column($music_list, 'id'));
+        if ($posit !== false){
+            unset($music_list[$posit]);
+            
+            $music_list = array_values($music_list);
+            file_put_contents($database, json_encode($music_list, JSON_PRETTY_PRINT));
+            $result = array_map('getCover', $music_list);
+        };
+        
+    };
+};
 
 //? condivisione server:
 header('Content-Type: application/json');

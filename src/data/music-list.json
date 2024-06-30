@@ -3,189 +3,129 @@
         "id": 1,
         "album": "Euphoria",
         "artista": "Echo Waves",
-        "uscita": 2015,
-        "valutazione": 4.5,
-        "copie_vendute": 1200000,
         "immagine": "cover1.jpg"
     },
     {
         "id": 2,
         "album": "Mystic River",
         "artista": "Luna Flow",
-        "uscita": 2017,
-        "valutazione": 4.7,
-        "copie_vendute": 900000,
         "immagine": "cover2.jpg"
     },
     {
         "id": 3,
         "album": "Solar Flare",
         "artista": "Stellar Sound",
-        "uscita": 2016,
-        "valutazione": 4.8,
-        "copie_vendute": 1100000,
         "immagine": "cover3.jpg"
     },
     {
         "id": 4,
         "album": "Moonlight Serenade",
         "artista": "Nocturne Notes",
-        "uscita": 2014,
-        "valutazione": 4.6,
-        "copie_vendute": 850000,
         "immagine": "cover4.jpg"
     },
     {
         "id": 5,
         "album": "Aurora",
         "artista": "Dawn Echoes",
-        "uscita": 2018,
-        "valutazione": 4.9,
-        "copie_vendute": 1300000,
         "immagine": "cover5.jpg"
     },
     {
         "id": 6,
         "album": "Quantum Leap",
         "artista": "Particle Theory",
-        "uscita": 2019,
-        "valutazione": 4.4,
-        "copie_vendute": 780000,
         "immagine": "cover6.jpg"
     },
     {
         "id": 7,
         "album": "Galactic Dreams",
         "artista": "Nebula Nights",
-        "uscita": 2020,
-        "valutazione": 4.7,
-        "copie_vendute": 950000,
         "immagine": "cover7.jpg"
     },
     {
         "id": 8,
         "album": "Echoes of Time",
         "artista": "Temporal Tunes",
-        "uscita": 2013,
-        "valutazione": 4.5,
-        "copie_vendute": 670000,
         "immagine": "cover8.jpg"
     },
     {
         "id": 9,
         "album": "Silent Horizon",
         "artista": "Calm Waves",
-        "uscita": 2012,
-        "valutazione": 4.2,
-        "copie_vendute": 600000,
         "immagine": "cover9.jpg"
     },
     {
         "id": 10,
         "album": "Nebula",
         "artista": "Stardust Symphony",
-        "uscita": 2021,
-        "valutazione": 4.8,
-        "copie_vendute": 1400000,
         "immagine": "cover10.jpg"
     },
     {
         "id": 11,
         "album": "Celestial Voyage",
         "artista": "Galactic Harmony",
-        "uscita": 2015,
-        "valutazione": 4.6,
-        "copie_vendute": 750000,
         "immagine": "cover11.jpg"
     },
     {
         "id": 12,
         "album": "Beyond Infinity",
         "artista": "Cosmic Rhythm",
-        "uscita": 2016,
-        "valutazione": 4.7,
-        "copie_vendute": 980000,
         "immagine": "cover12.jpg"
     },
     {
         "id": 13,
         "album": "Harmony",
         "artista": "Melodic Wave",
-        "uscita": 2017,
-        "valutazione": 4.9,
-        "copie_vendute": 1050000,
         "immagine": "cover13.jpg"
     },
     {
         "id": 14,
         "album": "Crystal Clear",
         "artista": "Prism Sound",
-        "uscita": 2018,
-        "valutazione": 4.5,
-        "copie_vendute": 690000,
         "immagine": "cover14.jpg"
     },
     {
         "id": 15,
         "album": "Echo",
         "artista": "Silent Whisper",
-        "uscita": 2019,
-        "valutazione": 4.3,
-        "copie_vendute": 540000,
         "immagine": "cover15.jpg"
     },
     {
         "id": 16,
         "album": "Dreamcatcher",
         "artista": "Mystic Sound",
-        "uscita": 2020,
-        "valutazione": 4.8,
-        "copie_vendute": 870000,
         "immagine": "cover16.jpg"
     },
     {
         "id": 17,
         "album": "Journey",
         "artista": "Voyage Sound",
-        "uscita": 2021,
-        "valutazione": 4.6,
-        "copie_vendute": 920000,
         "immagine": "cover17.jpg"
     },
     {
         "id": 18,
         "album": "Aurora Borealis",
         "artista": "Northern Lights",
-        "uscita": 2014,
-        "valutazione": 4.7,
-        "copie_vendute": 780000,
         "immagine": "cover18.jpg"
     },
     {
         "id": 19,
         "album": "Twilight",
         "artista": "Dusky Tones",
-        "uscita": 2013,
-        "valutazione": 4.5,
-        "copie_vendute": 650000,
         "immagine": "cover19.jpg"
     },
     {
         "id": 20,
         "album": "Radiance",
         "artista": "Bright Sounds",
-        "uscita": 2022,
-        "valutazione": 4.9,
-        "copie_vendute": 1150000,
         "immagine": "cover20.jpg"
     },
     {
-        "id": 265,
+        "id": 514,
         "album": "marsela",
         "artista": "jonathan",
-        "uscita": "2018",
-        "valutazione": "5",
-        "copie_vendute": 555479,
-        "immagine": "cover19.jpg"
+        "uscita": "2017",
+        "valutazione": "10",
+        "copie_vendute": 229448,
+        "immagine": "cover16.jpg"
     }
 ]
