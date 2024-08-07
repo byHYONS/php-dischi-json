@@ -16,7 +16,6 @@ createApp({
             newArtista: '',
             newUscita: '',
             newValutazione: '',
-            
         }
     },
     methods: {

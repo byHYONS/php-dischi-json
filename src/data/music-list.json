@@ -114,12 +114,6 @@
         "immagine": "cover19.jpg"
     },
     {
-        "id": 20,
-        "album": "Radiance",
-        "artista": "Bright Sounds",
-        "immagine": "cover20.jpg"
-    },
-    {
         "id": 514,
         "album": "marsela",
         "artista": "jonathan",
@@ -127,5 +121,14 @@
         "valutazione": "10",
         "copie_vendute": 229448,
         "immagine": "cover16.jpg"
+    },
+    {
+        "id": 160,
+        "album": "Marsela Jeta Ime",
+        "artista": "Samuele",
+        "uscita": "2018",
+        "valutazione": "6",
+        "copie_vendute": 973024,
+        "immagine": "cover20.jpg"
     }
 ]
